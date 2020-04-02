@@ -2,7 +2,7 @@ request = require('request')
 transliteration = require('transliteration')
 freeKey = require("./variables")
 moment = require('moment');
-moment.lang('ru');
+moment.locale('ru');
 
 const searchEverything = (req, res) => {
     const { q, from, to, qInTitle, source, domains, language, sortBy, pageSize, page } = req.body;
